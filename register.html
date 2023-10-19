@@ -1,0 +1,76 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticks - Register</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="register.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="register.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form-box">
+        <form action="home.html" name="Formfill" onsubmit="return validation()">
+          <h2>Registration Page</h2>
+          <p id="error">Please fill in this form</p>
+          <br />
+          <div class="form-box-input">
+            <i class="bx bx-envelope"></i>
+            <input type="email" name="Email" placeholder="Email" required />
+          </div>
+          <div class="form-box-input">
+            <i class="bx bx-lock-alt"></i>
+            <input
+              type="password"
+              name="Password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form-box-input">
+            <i class="bx bx-lock-alt"></i>
+            <input
+              type="password"
+              name="CPassword"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <div class="form-box-input">
+            <i class="bx bx-phone"></i>
+            <input
+              type="tel"
+              name="phoneno"
+              class="number"
+              placeholder="123 456 7890" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12"
+              required
+            />
+          </div>
+          <small>Phone number must be 10 digits.</small>
+          <br /><br />
+          <div class="input-gender">
+            <label for="gender">Gender</label>
+            <br />
+            <input type="radio" name="gender" required /> Male
+            <input type="radio" name="gender" required /> Female
+          </div>
+          <br />
+          <div class="input-tc">
+            <input type="checkbox" name="tc" required />
+            <label for="tc"
+              >I have agree with the <a>terms and conditions</a>.</label
+            >
+          </div>
+          <br />
+          <div class="button">
+            <input type="submit" class="btn" register="" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

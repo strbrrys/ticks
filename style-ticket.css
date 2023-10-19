@@ -1,0 +1,468 @@
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.header{
+    padding: 30px 60px 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    border: 1px;
+}
+
+
+.header-nav ul{
+    list-style: none;
+}
+
+.header-nav ul li{
+    display: inline-block;
+    position: relative;
+    
+}
+
+.header-nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 20px 25px;
+    color: rgb(180, 179, 179);
+    /* text-align: center; */
+}
+
+.header-nav ul li ul.dropdown li{
+    display: block;
+    left: -40px;
+}
+
+.header-nav ul li ul.dropdown{
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header-nav ul li a:hover{
+    /* background: #89877e; */
+    color: rgb(26, 26, 26);
+    text-decoration: underline;
+    text-decoration-color:#24a0ed;
+    text-decoration-thickness: 3px;
+}
+
+.header-nav ul li:hover ul.dropdown{
+    display: block;
+}
+
+.header-nav ul li .nav-here{
+    color: rgb(26, 26, 26);
+}
+
+.header-register{
+    text-decoration: none;
+    background-color: rgb(152, 211, 223);
+    /* color: rgb(255, 255, 255); */
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.header-register a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-register:hover{
+    scale: 1.05;
+}
+
+.header-register:active{
+    scale: 0.95;
+}
+
+#menus{
+    display: none;
+}
+
+header label{
+    font: 20px;
+    cursor: pointer;
+    display: none;
+    text-decoration: underline;
+    text-decoration-color:#24a0ed;
+    text-decoration-thickness: 3px;
+}
+
+
+
+
+/* image slider */
+
+.slider-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+
+.carousel-arrow{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-arrow:hover{
+    cursor: pointer;
+    background-color: rgb(242, 242, 242);
+}
+
+.carousel-arrow:active{
+    background-color: rgb(242, 242, 242);
+    scale: 0.9;
+}
+
+.carousel{
+    margin: 0px 15px;
+    overflow: hidden;
+}
+
+.carousel-image-container{
+    height: 900px;
+    position: relative;
+}
+
+.carousel-image{
+    float: left;
+}
+
+
+/* isi */
+
+.isi-container{
+    margin-top: 50px;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-bottom: 70px;
+}
+
+.tickets-card-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tickets-card{
+    border: 1.5px solid rgb(232, 232, 232);
+    width: 290px;
+    height: 395px;
+    /* justify-content: center; */
+    padding: 13px;
+    text-align: center;
+}
+
+.bs-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 7px 10px -10px black;
+}
+
+.bs-text-up{
+    color: rgb(238, 78, 78);
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+}
+
+h1{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(26, 26, 26);
+    text-decoration: underline;
+    text-decoration-color:#24a0ed;
+    text-decoration-thickness: 3px;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: 2;
+    margin-top: -9px;
+    text-align: left;
+    font-weight: 1000;
+}
+
+h4{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: -9px;
+    text-align: left;
+}
+
+.tickets-card a{
+    text-decoration: none;
+    color: #000000;
+    border: none;
+    padding: 15px 100px 15px;
+    background-color: rgb(232, 232, 232);
+}
+
+.tickets-card a:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    padding-bottom: 13px;
+}
+
+
+/* footer */
+
+footer{
+    background-color: #4c4c4c;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.socmed{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    padding: 10px 10px 10px;
+}
+
+.socmed a{
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0px 5px;
+    
+}
+
+.socmed a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #191919;
+}
+
+.copyright{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 1225px) {
+    .isi-container{
+        /* margin-top: 50px; */
+        margin-bottom: 60px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .best-seller-card-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .tickets-card{
+        border: 1.5px solid rgb(232, 232, 232);
+        width: 250px;
+        height: 365px;
+        padding: 13px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .tickets-card a{
+        padding: 12px 80px 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 1225px) {
+    .isi-container{
+        /* margin-top: 50px; */
+        margin-bottom: 60px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .tickets-card{
+        border: 1.5px solid rgb(232, 232, 232);
+        width: 250px;
+        height: 365px;
+        padding: 13px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .tickets-card a{
+        padding: 12px 60px 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 865px) {
+
+    header label{
+        display: initial;
+        margin-left: 65px;
+    }
+
+    .header-logo a img{
+        height: 40px;
+    }
+
+    header .header-nav{
+        position: absolute;
+        text-align: center;
+        top: 80px; left: 0; right: 0;
+        border-top: 1px solid rgb(235, 235, 235);
+        display: none;
+        background-color: #f9fdff;
+        z-index: 999;
+    }
+
+    .header-nav ul li{
+        width: 100%;
+    }
+
+    .header-nav ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    .header-nav ul li a{
+        display: block;
+        text-decoration: none;
+        padding: 20px 25px;
+        color: rgb(180, 179, 179);
+        /* text-align: center; */
+    }
+
+    .header-register{
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+        
+
+    #menus:checked ~ .header-nav{
+        display: initial;
+    }
+
+    .isi-container{
+        /* margin-top: 50px; */
+        margin-bottom: 60px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .tickets-card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tickets-card{
+        border: 1.5px solid rgb(232, 232, 232);
+        width: 250px;
+        height: 365px;
+        /* justify-content: center; */
+        padding: 13px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 390px) {
+   
+    .header-logo a img{
+        height: 30px;
+    }
+
+    header label{
+        margin-left: 30px;
+    }
+
+    header .header-nav{
+        text-align: center;
+        top: 70px;
+    }
+
+    .header-register{
+        padding: 5px 10px;
+        font-size: 14px;
+        margin-right: -30px;
+    }
+
+    .slider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tickets-card-container{
+        /* width: 100%; */
+        /* height: 100px; */
+        position: relative;
+    }
+
+    .images{
+        width: 50%;
+        height: 50%;
+        float: left;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 17px;
+    }
+
+    .isi-container{
+        /* margin-top: 50px; */
+        margin-bottom: 60px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .tickets-card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .tickets-card{
+        border: 1.5px solid rgb(232, 232, 232);
+        width: 250px;
+        height: 345px;
+        /* justify-content: center; */
+        padding: 13px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+}
